@@ -5,7 +5,7 @@ import { Image, Text, View } from 'react-native'
 
 const QuizCard = ({subject, stars, time, question}) => {
   return (
-    <View style={{borderRadius:20, alignSelf:'center', backgroundColor:'#F0F0F0', width:'99%', height:100, marginBottom:10}}>
+    <View style={{borderRadius:20, alignSelf:'center', backgroundColor:'#FFFFFF', width:'99%', height:100, marginBottom:10}}>
       <View style={{flexDirection:'row', alignItems:'center', justifyContent:'space-between'}}>
         <View style={{flexDirection:'row', padding:5, alignItems:'center', gap:10}}>
           <Image source={quiz} style={{borderRadius: 40, height:60, width:60}} />

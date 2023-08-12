@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import QuizCard from '../Common/QuizCard'
+import QuizCard from './QuizCard'
 
 const RecentQuiz = () => {
   return (

@@ -1,8 +1,8 @@
 import React from 'react'
-import { View, Text, FlatList } from 'react-native'
+import { View, Text, FlatList, ScrollView } from 'react-native'
 import QuizCard from '../Common/QuizCard'
 
-const qiuzzes = [
+const quizzes = [
   {
     id:1,
     subject:"DBMS",
@@ -31,6 +31,13 @@ const qiuzzes = [
     time:"1:00",
     question:"80"
   },
+  {
+    id:5,
+    subject:"OTA",
+    stars:"200",
+    time:"1:00",
+    question:"30"
+  },
 ]
 
 const AllQuiz = () => {
@@ -42,8 +49,9 @@ const AllQuiz = () => {
       <Text style={{fontSize:20, color:'black'}}>All Quiz</Text>
       <View>
         <FlatList
-          data={qiuzzes}
+          data={quizzes}
           renderItem={render}
+          showsHorizontalScrollIndicator={false}
           keyExtractor={(item)=> item.id}
         />
       </View>
